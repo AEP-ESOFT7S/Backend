@@ -25,6 +25,16 @@ router.post('/', function (req, res) {
             clientId:  req.body.clientId,
             clientSecret:  req.body.clientSecret,
             merchantId:  req.body.merchantId,
+            cnpj: req.body.cnpj,
+            corporateName: req.body.corporateName,
+            clientId : req.body.clientId,
+            clientSecret : req.body.clientSecret,
+            merchantId : req.body.merchantId,
+            cpf: req.body.cpf,
+            meansOfDelivery: req.body.meansOfDelivery,
+            bank : req.body.bank,
+            agency: req.body.agency,
+            account: req.body.account,
             type:  req.body.type 
         }, 
         function (err, user) {
